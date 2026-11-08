@@ -1,22 +1,8 @@
--- RoBeats Autoplay
--- Configura el autoplay aquí:
-local Cfg = {
-    -- Tecla para pausar y reanudar el autoplay
-    keyPause = "PageDown"
-    , -- Tecla para destruir el script
-    keyDestroy = "End"
-    , -- Indica si se jugará con la mejor precisión posible (lo que permitan tus fps) [true - false]
-    superAccuracy = false
-    , -- Imprimir registros en consola [true - false]
-    logs = true
-    , -- [Limites de aleatoriedad y hit box para tocar notas, en roblox studs en relación a la posición de los receptores de notas. Afecta la presición]
-    limUpper = 3.25,
-    limBottom = -1.40
-    , -- [Retrasos al simular presionar teclas, en segundos]
-    keyDelayMax = 0.026,
-    keyDelayMin = 0.007
-}
--- Fin
+local Cfg = (...)
+
+if not Cfg then
+    error("No se pasó el parámetro de configuración del script")
+end
 
 if _G.JYR9MC9P then
     print("[AutoPlayMapper] Ya hay un script activo")
