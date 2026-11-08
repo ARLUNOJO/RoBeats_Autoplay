@@ -3,7 +3,7 @@ Script Luau para que RoBeats se juegue automáticamente :yo_cuando:
 # Uso
 Simplemente corre el script en tu executor de preferencia
 ```luau
--- RoBeats Autoplay
+-- RoBeats Autoplay de @ARLUNOJO
 -- Configura el autoplay aquí:
 local Cfg = {
     -- Tecla para pausar y reanudar el autoplay
